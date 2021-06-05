@@ -1,5 +1,5 @@
 import { makeStyles, Typography } from '@material-ui/core';
-import actualThenable from '../promises';
+import createUser from '../promises';
 import { parseIfYouMust } from '../utils';
 import makeAssessor from '../nasty';
 import { hardCodedResolvedValue, hardCodedRejectedValue } from '../reducer';
@@ -60,7 +60,7 @@ import backdoor from 'backdoorthen';`
       }</pre>
       <pre>
         const createUser = {
-          actualThenable.toString().replace('axios__WEBPACK_IMPORTED_MODULE_0___default.a', 'axios')
+          createUser.toString().replace('axios__WEBPACK_IMPORTED_MODULE_0___default.a', 'axios')
         };
       </pre>
       {state.assessor && <pre>const assessorOverride = {makeAssessor(state).toString()};</pre>}

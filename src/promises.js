@@ -20,10 +20,10 @@ ${message || e}`;
   alert(log);
 };
 
-const actualThenable = ({ firstName, lastName }) => {
+const createUser = ({ firstName, lastName }) => {
   const queryString = `?firstName=${firstName}&lastName=${lastName}`;
   const url = `https://backdoorthen-okob4pm0bfqy.runkit.sh/createUser${queryString}`;
   return axios.get(url);
 };
 
-export default actualThenable;
+export default createUser;

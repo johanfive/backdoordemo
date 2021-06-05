@@ -5,9 +5,10 @@ import UserForm from './components/UserForm';
 import ParamsSection from './components/ParamsSection';
 import ConfigSection from './components/ConfigSection';
 import AssessorSection from './components/AssessorSection';
-import actualThenable, { handleResponse, handleError } from './promises';
+import createUser, { handleResponse, handleError } from './promises';
 import reducer, { hardCodedRejectedValue, hardCodedResolvedValue, initialState } from './reducer';
 import CodeViewer from './components/CodeViewer';
+import onOffAnimation from './onOffAnimation.gif';
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -40,7 +41,7 @@ function App() {
         assessor: assessor && (() => ({ isBackdoor, doResolve, isFast }))
       }
     });
-    withBackdoor(actualThenable)(formData)
+    withBackdoor(createUser)(formData)
       .then(handleResponse)
       .catch(handleError);
   };
@@ -52,6 +53,12 @@ function App() {
       <ParamsSection state={state} handleChange={handleChange} />
       <ConfigSection state={state} handleChange={handleChange} />
       <AssessorSection state={state} handleChange={handleChange} />
+      <div style={{ flexBasis: '100%', height: '0' }}></div>
+      <img
+        src={onOffAnimation}
+        alt="Animated gif showing code for a promise with and without backdoor"
+        style={{ margin: '5rem 1rem' }}
+      />
     </div>
   );
 }

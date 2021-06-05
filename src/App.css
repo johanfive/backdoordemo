@@ -4,8 +4,6 @@
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #f5f5f5;
-  padding: 1rem;
 }
 
 pre {
