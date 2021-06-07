@@ -1,5 +1,4 @@
 import { makeStyles, Typography } from '@material-ui/core';
-import createUser from '../promises';
 import { parseIfYouMust } from '../utils';
 import makeAssessor from '../nasty';
 import { hardCodedResolvedValue, hardCodedRejectedValue } from '../reducer';
@@ -59,9 +58,14 @@ const CodeViewer = ({ state }) => {
 import backdoor from 'backdoorthen';`
       }</pre>
       <pre>
-        const createUser = {
-          createUser.toString().replace('axios__WEBPACK_IMPORTED_MODULE_0___default.a', 'axios')
-        };
+        {`const createUser = ({
+  firstName,
+  lastName
+}) => {
+  const queryString = \`?firstName=\${firstName}&lastName=\${lastName}\`;
+  const url = \`https://backdoorthen-okob4pm0bfqy.runkit.sh/createUser\${queryString}\`;
+  return axios.get(url);
+};`}
       </pre>
       {state.assessor && <pre>const assessorOverride = {makeAssessor(state).toString()};</pre>}
       <pre>
