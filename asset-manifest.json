@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/backdoordemo/static/css/main.95375376.chunk.css",
-    "main.js": "/backdoordemo/static/js/main.fb941ccc.chunk.js",
-    "main.js.map": "/backdoordemo/static/js/main.fb941ccc.chunk.js.map",
+    "main.js": "/backdoordemo/static/js/main.771b825a.chunk.js",
+    "main.js.map": "/backdoordemo/static/js/main.771b825a.chunk.js.map",
     "runtime-main.js": "/backdoordemo/static/js/runtime-main.e8d9e76d.js",
     "runtime-main.js.map": "/backdoordemo/static/js/runtime-main.e8d9e76d.js.map",
     "static/js/2.36d752b4.chunk.js": "/backdoordemo/static/js/2.36d752b4.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.e8d9e76d.js",
     "static/js/2.36d752b4.chunk.js",
     "static/css/main.95375376.chunk.css",
-    "static/js/main.fb941ccc.chunk.js"
+    "static/js/main.771b825a.chunk.js"
   ]
 }
