@@ -1,6 +1,5 @@
 import { makeStyles, Typography } from '@material-ui/core';
 import { parseIfYouMust } from '../utils';
-import makeAssessor from '../nasty';
 import { hardCodedResolvedValue, hardCodedRejectedValue } from '../reducer';
 
 const useStyles = makeStyles((theme) => ({
@@ -53,10 +52,10 @@ const CodeViewer = ({ state }) => {
           <span className={classes.backdoor}> backdoorthen </span>
         </Typography>
       </div>
-      <pre>{
-        `import axios from 'axios';
-import backdoor from 'backdoorthen';`
-      }</pre>
+      <pre>
+        {`import axios from 'axios';
+import backdoor from 'backdoorthen';`}
+      </pre>
       <pre>
         {`const createUser = ({
   firstName,
@@ -67,10 +66,17 @@ import backdoor from 'backdoorthen';`
   return axios.get(url);
 };`}
       </pre>
-      {state.assessor && <pre>const assessorOverride = {makeAssessor(state).toString()};</pre>}
+      {state.assessor &&
+        <pre>
+          {`const assessorOverride = input => ({
+  isBackdoor: ${state.isBackdoor ? 'true' : 'false'},
+  doResolve: ${state.doResolve ? 'true' : 'false'},
+  isFast: ${state.isFast ? 'true' : 'false'}
+});`}
+        </pre>
+      }
       <pre>
-        {`
-const handleSubmit = formData => {
+        {`const handleSubmit = formData => {
   const withBackdoor = thenable => backdoor({
     actualThenable: thenable,
     input: formData.${state.input},
@@ -87,8 +93,7 @@ const handleSubmit = formData => {
   withBackdoor(createUser)(formData)
     .then(handleResponse)
     .catch(handleError);
-};
-`}
+};`}
       </pre>
     </div>
   );
