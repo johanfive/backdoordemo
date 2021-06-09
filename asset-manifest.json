@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/backdoordemo/static/css/main.95375376.chunk.css",
-    "main.js": "/backdoordemo/static/js/main.771b825a.chunk.js",
-    "main.js.map": "/backdoordemo/static/js/main.771b825a.chunk.js.map",
+    "main.css": "/backdoordemo/static/css/main.6c794864.chunk.css",
+    "main.js": "/backdoordemo/static/js/main.dd0beca6.chunk.js",
+    "main.js.map": "/backdoordemo/static/js/main.dd0beca6.chunk.js.map",
     "runtime-main.js": "/backdoordemo/static/js/runtime-main.e8d9e76d.js",
     "runtime-main.js.map": "/backdoordemo/static/js/runtime-main.e8d9e76d.js.map",
-    "static/js/2.36d752b4.chunk.js": "/backdoordemo/static/js/2.36d752b4.chunk.js",
-    "static/js/2.36d752b4.chunk.js.map": "/backdoordemo/static/js/2.36d752b4.chunk.js.map",
+    "static/js/2.b67d7a3f.chunk.js": "/backdoordemo/static/js/2.b67d7a3f.chunk.js",
+    "static/js/2.b67d7a3f.chunk.js.map": "/backdoordemo/static/js/2.b67d7a3f.chunk.js.map",
     "static/js/3.92c42bb8.chunk.js": "/backdoordemo/static/js/3.92c42bb8.chunk.js",
     "static/js/3.92c42bb8.chunk.js.map": "/backdoordemo/static/js/3.92c42bb8.chunk.js.map",
     "index.html": "/backdoordemo/index.html",
-    "static/css/main.95375376.chunk.css.map": "/backdoordemo/static/css/main.95375376.chunk.css.map",
-    "static/js/2.36d752b4.chunk.js.LICENSE.txt": "/backdoordemo/static/js/2.36d752b4.chunk.js.LICENSE.txt",
-    "static/media/onOffAnimation.af7bdcc2.gif": "/backdoordemo/static/media/onOffAnimation.af7bdcc2.gif"
+    "static/css/main.6c794864.chunk.css.map": "/backdoordemo/static/css/main.6c794864.chunk.css.map",
+    "static/js/2.b67d7a3f.chunk.js.LICENSE.txt": "/backdoordemo/static/js/2.b67d7a3f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e8d9e76d.js",
-    "static/js/2.36d752b4.chunk.js",
-    "static/css/main.95375376.chunk.css",
-    "static/js/main.771b825a.chunk.js"
+    "static/js/2.b67d7a3f.chunk.js",
+    "static/css/main.6c794864.chunk.css",
+    "static/js/main.dd0beca6.chunk.js"
   ]
 }
