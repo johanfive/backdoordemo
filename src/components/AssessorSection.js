@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  makeStyles,
   Accordion,
   AccordionSummary,
   AccordionDetails,
@@ -10,19 +9,9 @@ import {
 } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-const useStyles = makeStyles({
-  root: {
-    minWidth: '35%',
-    maxWidth: '50%',
-    marginTop: '1rem'
-  },
-});
-
 export default function AssessorSection({ state, handleChange }) {
-  const classes = useStyles();
-
   return (
-    <div className={classes.root}>
+    <div className="assessor">
       <Typography variant="h5">Assessor</Typography>
       <Typography variant="caption" display="block">
         Override backdoor's default behaviour with a function that takes in the input

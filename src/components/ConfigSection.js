@@ -3,7 +3,7 @@ import { formStyle } from '../utils';
 
 const ConfigSection = ({ state, handleChange }) => {
   return (
-    <Card style={{ margin: '1rem 1rem 0 0' }}>
+    <Card style={{ margin: '1rem' }}>
       <form>
         <fieldset style={formStyle.config}>
           <legend>| params.config |</legend>

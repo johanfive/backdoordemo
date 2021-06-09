@@ -4,7 +4,7 @@ import { formStyle } from '../utils';
 
 const ParamsSection = ({ state, handleChange}) => {
   return (
-    <Card style={{ margin: '1rem 1rem 0 0' }}>
+    <Card style={{ margin: '1rem' }}>
       <form>
         <fieldset style={formStyle.params}>
         <legend>| backdoor(params) |</legend>

@@ -62,7 +62,8 @@ import backdoor from 'backdoorthen';`}
   lastName
 }) => {
   const queryString = \`?firstName=\${firstName}&lastName=\${lastName}\`;
-  const url = \`https://backdoorthen-okob4pm0bfqy.runkit.sh/createUser\${queryString}\`;
+  const baseUrl = 'https://backdoorthen-okob4pm0bfqy.runkit.sh';
+  const url = \`\${baseUrl}/createUser\${queryString}\`;
   return axios.get(url);
 };`}
       </pre>

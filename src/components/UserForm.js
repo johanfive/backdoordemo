@@ -15,7 +15,7 @@ const UserForm = ({ selectedField, onSubmit }) => {
   const disabled = !(fields.firstName && fields.lastName);
   const firstNameIsInput = selectedField === 'firstName';
   return (
-    <Card style={{ margin: '1rem 1rem 0 0' }}>
+    <Card style={{ margin: '1rem' }}>
       <form onSubmit={handleSubmit}>
         <fieldset style={formStyle.createUser}>
           <legend>| Create User |</legend>
