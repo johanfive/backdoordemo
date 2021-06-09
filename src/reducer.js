@@ -23,7 +23,7 @@ export const initialState = {
   fast: '1000',
   slow: '5000',
   separator: '-',
-  enabledInProd: false,
+  enabledInProd: true,
   assessor: false,
   isBackdoor: true,
   doResolve: true,
